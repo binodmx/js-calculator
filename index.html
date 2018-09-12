@@ -2,6 +2,12 @@
 <html>
     <head>
     <title>Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script type="text/javascript">
         function sumval(){
                 var num1,num2,result;
@@ -29,7 +35,8 @@
 </head>
 
 <body>
-    <form id="calc" name="calc">
+    <form id="calc" name="calc" class="form-horizontal">
+        
         Number1 : <input id="num1" type="text" name="Num1"><br>
         Number2 : <input id="num2" type="text" name="Num2"><br>
         Result  : <input id="result" type="text" name="result" disabled><br>
@@ -38,9 +45,41 @@
         <input type="button" value="-" onclick="subval()">
         <input type="button" value="Reset" onclick="resetval()">
 
-        </form>
-
-        
+    </form>
+    <br>
+    <br>
+    <table class = 'table table-striped'>
+        <tr>
+            <th>Index No</th>
+            <th>Role</th>
+            <th>Task</th>
+            <th>Work (%)</th>
+        </tr>
+        <tr>
+            <td>160110T</td>
+            <td>Programmer</td>
+            <td>Pair programming of application with Javascript</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>160278M</td>
+            <td>Scrum Master</td>
+            <td>Planned scrum to manage developing and did hosting</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>160411R</td>
+            <td>Tester</td>
+            <td>Tested with different inputs and checked for bugs</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>160578H</td>
+            <td>Programmer</td>
+            <td>Pair programming of application with html</td>
+            <td>25%</td>
+        </tr>
+    </table>       
 
     </body>
-</htlm>
+</html>
