@@ -9,35 +9,38 @@
 
 </head>
 <body>
-<div style="padding:50px">
-	<form name="cal" style="margin-left:500px; font-size:20px">
-		<input type="text" name="display"> 
-        <br><br>
-        <input type ="button" value ="7" onclick="cal.display.value+='7'">
-        <input type ="button" value ="8" onclick="cal.display.value+='8'">
-		<input type ="button" value ="9" onclick="cal.display.value+='9'">	
-		<input type ="button" value ="+" onclick="cal.display.value+='+'">
-        <br><br>
-        <input type ="button" value ="4" onclick="cal.display.value+='4'">
-        <input type ="button" value ="5" onclick="cal.display.value+='5'">
-		<input type ="button" value ="6" onclick="cal.display.value+='6'">
-		<input type ="button" value ="-" onclick="cal.display.value+='-'">
-        <br><br>        
-        <input type ="button" value ="1" onclick="cal.display.value+='1'">
-        <input type ="button" value ="2" onclick="cal.display.value+='2'">
-        <input type ="button" value ="3" onclick="cal.display.value+='3'">
-        <input type ="button" value ="*" onclick="cal.display.value+='*'">
-		
-		
-		
-		<br><br>
-		<input type ="button" value ="0" onclick="cal.display.value+='0'">
-		<input type ="button" value ="/" onclick="cal.display.value+='/'">
-		<input type ="button" value ="." onclick="cal.display.value+='.'">
-		<input type ="button" value ="=" onclick="cal.display.value =eval(cal.display.value)">
-		<br><br>
-		<input type="button" value="Delete" onclick="cal.display.value=''" id="del"> 
-	</form>
+<div style="padding:50px" align="center">
+    <form name="cal" style="font-size:25px;border-style: solid;width:200px;height:260px;padding: 7px">
+        <p>
+        <input type="text" name="display" style="width: 134px;height: 40px;text-align:right;padding:10px">
+        <input type="button" value="C" onclick="cal.display.value=''" id="del" class="btn btn-danger" style="width: 40px;height: 40px;">
+        </p>
+        <p>
+        <input type ="button" value ="7" onclick="cal.display.value+='7'" class="btn btn-primary" style="width: 40px;height: 40px;">
+        <input type ="button" value ="8" onclick="cal.display.value+='8'" class="btn btn-primary" style="width: 40px;height: 40px;">
+		<input type ="button" value ="9" onclick="cal.display.value+='9'" class="btn btn-primary" style="width: 40px;height: 40px;">	
+        <input type ="button" value ="+" onclick="cal.display.value+='+'" class="btn btn-warning" style="width: 40px;height: 40px;">
+         
+        </p>
+        <p>
+        <input type ="button" value ="4" onclick="cal.display.value+='4'" class="btn btn-primary" style="width: 40px;height: 40px;">
+        <input type ="button" value ="5" onclick="cal.display.value+='5'" class="btn btn-primary" style="width: 40px;height: 40px;">
+		<input type ="button" value ="6" onclick="cal.display.value+='6'" class="btn btn-primary" style="width: 40px;height: 40px;">
+		<input type ="button" value ="-" onclick="cal.display.value+='-'" class="btn btn-warning" style="width: 40px;height: 40px;">
+        </p>   
+        <p> 
+        <input type ="button" value ="1" onclick="cal.display.value+='1'" class="btn btn-primary" style="width: 40px;height: 40px;">
+        <input type ="button" value ="2" onclick="cal.display.value+='2'" class="btn btn-primary" style="width: 40px;height: 40px;">
+        <input type ="button" value ="3" onclick="cal.display.value+='3'" class="btn btn-primary" style="width: 40px;height: 40px;">
+        <input type ="button" value ="x" onclick="cal.display.value+='*'" class="btn btn-warning" style="width: 40px;height: 40px;">		
+        </p>  
+        <p>
+        <input type ="button" value ="0" onclick="cal.display.value+='0'" class="btn btn-primary" style="width: 40px;height: 40px;">
+        <input type ="button" value ="." onclick="cal.display.value+='.'" class="btn btn-primary" style="width: 40px;height: 40px;">		
+        <input type ="button" value ="=" onclick="cal.display.value =eval(cal.display.value)" class="btn btn-success" style="width: 40px;height: 40px;">
+        <input type ="button" value ="/" onclick="cal.display.value+='/'" class="btn btn-warning" style="width: 40px;height: 40px;">
+        </p>		
+    </form>
 
 		<br>
     <br>
