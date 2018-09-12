@@ -21,17 +21,22 @@
                 document.calc.result.value=result;
         }
 
+    function resetval(){
+        document.getElementById("calc").reset();
+    }
+
     </script>
 </head>
 
 <body>
-    <form name="calc">
+    <form id="calc" name="calc">
         Number1 : <input id="num1" type="text" name="Num1"><br>
         Number2 : <input id="num2" type="text" name="Num2"><br>
         Result  : <input id="result" type="text" name="result" disabled><br>
 
         <input type="button" value="+" onclick="sumval()">
         <input type="button" value="-" onclick="subval()">
+        <input type="button" value="Reset" onclick="resetval()">
 
         </form>
 
