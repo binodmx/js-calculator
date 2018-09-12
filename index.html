@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Calculator</title>
+    <script type="text/javascript">
+        function sumval(){
+                var num1,num2,result;
+                num1 = Number(document.calc.Num1.value);
+                num2 = Number(document.calc.Num2.value);
+            
+                result = num1+num2;
+                document.calc.result.value=result;
+        }
+
+     function subval(){
+                var num1,num2,result;
+                num1 = Number(document.calc.Num1.value);
+                num2 = Number(document.calc.Num2.value);
+            
+                result = num1-num2;
+                document.calc.result.value=result;
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="calc">
+        Number1 : <input id="num1" type="text" name="Num1"><br>
+        Number2 : <input id="num2" type="text" name="Num2"><br>
+        Result  : <input id="result" type="text" name="result" disabled><br>
+
+        <input type="button" value="+" onclick="sumval()">
+        <input type="button" value="-" onclick="subval()">
+
+        </form>
+
+        
+
+    </body>
+</htlm>
