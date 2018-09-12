@@ -1,52 +1,45 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <title>Calculator</title>
-    <meta charset="utf-8">
+<head>
+<title>Calculator</title>
+<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-        function sumval(){
-                var num1,num2,result;
-                num1 = Number(document.calc.Num1.value);
-                num2 = Number(document.calc.Num2.value);
-            
-                result = num1+num2;
-                document.calc.result.value=result;
-        }
-
-     function subval(){
-                var num1,num2,result;
-                num1 = Number(document.calc.Num1.value);
-                num2 = Number(document.calc.Num2.value);
-            
-                result = num1-num2;
-                document.calc.result.value=result;
-        }
-
-    function resetval(){
-        document.getElementById("calc").reset();
-    }
-
-    </script>
 </head>
-
 <body>
-    <form id="calc" name="calc" class="form-horizontal">
-        
-        Number1 : <input id="num1" type="text" name="Num1"><br>
-        Number2 : <input id="num2" type="text" name="Num2"><br>
-        Result  : <input id="result" type="text" name="result" disabled><br>
+<div style="padding:50px">
+	<form name="cal" style="margin-left:500px; font-size:20px">
+		<input type="text" name="display"> 
+        <br><br>
+        <input type ="button" value ="7" onclick="cal.display.value+='7'">
+        <input type ="button" value ="8" onclick="cal.display.value+='8'">
+		<input type ="button" value ="9" onclick="cal.display.value+='9'">	
+		<input type ="button" value ="+" onclick="cal.display.value+='+'">
+        <br><br>
+        <input type ="button" value ="4" onclick="cal.display.value+='4'">
+        <input type ="button" value ="5" onclick="cal.display.value+='5'">
+		<input type ="button" value ="6" onclick="cal.display.value+='6'">
+		<input type ="button" value ="-" onclick="cal.display.value+='-'">
+        <br><br>        
+        <input type ="button" value ="1" onclick="cal.display.value+='1'">
+        <input type ="button" value ="2" onclick="cal.display.value+='2'">
+        <input type ="button" value ="3" onclick="cal.display.value+='3'">
+        <input type ="button" value ="*" onclick="cal.display.value+='*'">
+		
+		
+		
+		<br><br>
+		<input type ="button" value ="0" onclick="cal.display.value+='0'">
+		<input type ="button" value ="/" onclick="cal.display.value+='/'">
+		<input type ="button" value ="." onclick="cal.display.value+='.'">
+		<input type ="button" value ="=" onclick="cal.display.value =eval(cal.display.value)">
+		<br><br>
+		<input type="button" value="Delete" onclick="cal.display.value=''" id="del"> 
+	</form>
 
-        <input type="button" value="+" onclick="sumval()">
-        <input type="button" value="-" onclick="subval()">
-        <input type="button" value="Reset" onclick="resetval()">
-
-    </form>
-    <br>
+		<br>
     <br>
     <table class = 'table table-striped'>
         <tr>
@@ -81,5 +74,6 @@
         </tr>
     </table>       
 
-    </body>
+</div>
+</body>
 </html>
